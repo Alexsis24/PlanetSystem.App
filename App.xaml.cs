@@ -1,7 +1,6 @@
 ﻿#if WINDOWS
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
-using PlanetSystem.Views;
 using Windows.Graphics;
 #endif
 
@@ -10,7 +9,7 @@ namespace PlanetSystem;
 public partial class App : Application
 {
 	const int WindowWidth = 540;
-	const int WindowHeight = 1000;
+	const int WindowHeight = 1200;
 	public App()
 	{
 		InitializeComponent();
