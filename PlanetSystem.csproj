@@ -32,14 +32,12 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
-
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#512BD4" />
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -52,6 +50,7 @@
 	  <None Remove="Resources\Fonts\Montserrat-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Montserrat-Medium.ttf" />
 	  <None Remove="Resources\Fonts\Montserrat-SemiBold.ttf" />
+	  <None Remove="Resources\Images\ceres.png" />
 	  <None Remove="Resources\Images\earth.svg" />
 	  <None Remove="Resources\Images\gorillaz.jpg" />
 	  <None Remove="Resources\Images\imgback.png" />
@@ -63,18 +62,26 @@
 	  <None Remove="Resources\Images\mars.svg" />
 	  <None Remove="Resources\Images\mercury.svg" />
 	  <None Remove="Resources\Images\neptune.svg" />
+	  <None Remove="Resources\Images\pluto.png" />
 	  <None Remove="Resources\Images\saturn.svg" />
 	  <None Remove="Resources\Images\uranus.svg" />
 	  <None Remove="Resources\Images\venus.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\PlanetDetailsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\PlanetsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\StartPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Resources\AppIcon\" />
 	</ItemGroup>
 
 </Project>

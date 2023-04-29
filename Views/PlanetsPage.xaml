@@ -64,7 +64,7 @@
         <!--Main Content-->
         <Grid
             x:Name="MainContentGrid"
-            Padding="24,52,24,0"
+            Padding="24,42,24,0"
             BackgroundColor="{StaticResource PageBackgroundColor}"
             ColumnDefinitions="*, Auto"
             RowDefinitions="Auto,*"
@@ -88,8 +88,8 @@
             </VerticalStackLayout>
 
             <Border
-                WidthRequest="56"
-                HeightRequest="56"
+                WidthRequest="50"
+                HeightRequest="50"
                 VerticalOptions="Center"
                 HorizontalOptions="End"
                 Stroke="{StaticResource LightBorderColor}"
@@ -140,7 +140,7 @@
                         Stroke="{StaticResource BorderColor}"
                         HorizontalOptions="Fill"
                         Margin="0,0,24,0"
-                        HeightRequest="48"
+                        HeightRequest="40"
                         >
 
                         <Border.StrokeShape>
@@ -187,7 +187,7 @@
 
                     <CollectionView
                         x:Name="lstPopularPlanets"
-                        HeightRequest="280"
+                        HeightRequest="230"
                         SelectionMode="Single"
                         SelectionChanged="Planets_SelectionChanged">
                         
